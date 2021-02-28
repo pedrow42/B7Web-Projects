@@ -1,6 +1,7 @@
-body{
+*{
     margin: 0;
     padding: 0;
+    font-family: Arial;
 }
 header{
     display: flex;
@@ -23,20 +24,18 @@ header{
 nav ul,
 nav li{
     list-style: none;
-    margin: 0;
-    padding:0;
 }
 nav ul{
     display: flex;
 }
 nav a{
     display: block;
-    padding: 15px;
-    margin: 1px;
+    padding: 12px;
+    margin-right: 2px;
     text-decoration: none;
     text-transform: uppercase;
     color: #727272;
-    font-family: Arial;
+    font-size: 15px;
 }
 nav .active a{
     background-color: #39aae1;
@@ -68,25 +67,109 @@ nav .last a:hover{
     justify-content: center;
 }
 .banner_headline h1{
-    font-family: Arial;
     color: #FFFFFF;
     font-size: 60px;
     text-shadow: 0px .5px 0px #000000;
-    margin-bottom: 20px;
-    padding: 0;
     max-width: 350px;
 }
 .banner_headline h2{
     color: #FFFFFF;
     font-size: 20px;
     text-shadow: 0px .5px 0px #000000;
-    margin: 0;
-    padding: 0;
     max-width: 350px;
+    margin-top: 25px;
 }
 .banner_options{
     height: 210px;
+    display: flex;
 }
 .column{
     flex-direction: column;
+}
+.banner1, 
+.banner2, 
+.banner3{
+    flex: 1;
+    color: #FFFFFF;
+    padding: 25px;
+}
+.banner1{
+    background: #39aae1;
+}
+.banner2{
+    background: #0079c7;
+}
+.banner3{
+    background: #2b4c99;
+}
+h3{
+    font-size: 22px;
+}
+.desc{
+    font-size: 12px;
+    margin-top: 20px;
+    margin-bottom: 30px;
+}
+.banner_options a{
+    border: 1px solid #FFFFFF;
+    padding: 5px;
+    color: #FFFFFF;
+    font-size: 14px;
+    text-decoration: none;
+}
+.banner_options a:hover{
+    color: #000000;
+    background-color: #FFFFFF;
+}
+.value1, 
+.value2, 
+.value3{
+    display: flex;
+    justify-content: space-between;
+    padding: 12px 0 12px 0;
+    border-bottom: .5px solid #ffffff1a;
+}
+.value1,
+.value2,
+.value3 span{
+    font-size: 13px;
+}
+.banner3 h3{
+    margin-bottom: 8px;
+}
+#geral{
+    display: flex;
+    justify-content:center;
+}
+#geral section{
+    flex:2;
+}
+#geral aside{
+    flex: 1;
+}
+#geral h3{
+    margin-top: 30px;
+    margin-bottom: 8px;
+    color: #000000d8;
+    font-size: 21px;
+}
+.widget_tittle_bar{
+    width: 60px;
+    height: 2px;
+    background-color: #36a9e1;
+    margin-bottom: 20px;
+}
+.widget-content{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content:space-between;
+}
+.widget-content div{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 160px;
+    width: 150px;
+    background-color: #39aae1;
+    margin-bottom: 30px;
 }
