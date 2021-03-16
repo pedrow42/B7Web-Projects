@@ -174,8 +174,8 @@ h3{
     background-color: #39aae1;
     margin-bottom: 30px;
 }
-.widget-content div:nth-last-child(-n+2){
-    margin-bottom: 0;
+.change{
+    margin-top: 0;
 }
 .widget_paragraph,
 .news_paragraph,
@@ -351,4 +351,91 @@ footer .footer_area-item .widget_paragraph{
 }
 .footer_contact_info-center p{
     color: #727272;
+}
+.menuMobile{
+    display: none;
+    width: 40px;
+    height: 40px;
+    margin: 40px 20px 40px 0;
+}
+.mm_line{
+    height: 3px;
+    background-color: #39aae1;
+}
+@media (max-width:600px){
+    .banner_headline h1{
+        font-size: 45px;
+        padding-top: 20px;
+    }
+    .banner_headline h2{
+        font-size: 17px;
+    }
+    .container{
+        width: 500px;
+        flex-direction: column;
+    }
+    #banner{
+        height: auto;
+    }
+    .banner_options{
+        height: auto;
+        flex-direction: column;
+        margin-top: 40px;
+    }
+    .widget-content{
+        flex: 2;
+    }
+    .widget-content div{
+        height: 200px;
+        width: 225px;
+        
+    }
+    .footer_menu {
+        flex-direction: column;
+    }
+    .footer_area {
+        flex-direction: column;
+    }
+    header .container{
+        flex-direction: row;
+    }
+    nav ul{
+        flex-direction: column;
+        display: none;
+        position: absolute;
+        left: 0;
+        width: 100%;
+        background:#FFFFFF;
+    }
+    header{
+        height: auto;
+    }
+    .menuMobile{
+        display: flex;
+        flex-direction: column;
+        justify-content:space-around;
+    }
+    @media (max-width:515px){
+        .logo,
+        .banner_headline{
+            padding: 25px;
+        }
+        article,
+        .widget_tittle,
+        .widget_paragraph,
+        .widget-body ul,
+        .footer_contact_info_row,
+        .footer_copy
+        {
+            margin-left: 22px;
+            max-width: 90%;
+        }
+        .widget-content div{
+            margin: 0 22px 22px 22px;
+            width: 100%;
+        }
+        .footer_contact_info-center{
+            max-width: 90%;
+        }
+    }
 }
