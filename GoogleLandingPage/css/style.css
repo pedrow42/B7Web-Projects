@@ -1,0 +1,56 @@
+*{
+    padding: 0;
+    margin: 0;
+    font-family: arial, sans-serif;
+}
+section{
+    position: relative;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+header{
+    width: 100%; 
+    display: flex;
+    align-items: center;
+    padding: 6px;
+    margin: 25px 0 20px 0;
+}
+.mainBar{
+    position: absolute;
+    right: 20px;
+    display: flex;
+    justify-content:center;
+    align-items: center;
+}
+ul{
+    list-style: none;
+    
+    display: flex;
+    align-items: center;
+    justify-content:center;
+    margin-left: 18px;
+}
+ul li{
+    margin-left: 15px;
+}
+ul li a{
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 24px;
+    color: #222222;
+
+    text-decoration: none;
+
+    display: flex;
+    justify-content:center;
+
+}
+ul li a .face{
+    width: 28px;
+}
+ul li a img{
+    width: 23px;
+}
+
+
