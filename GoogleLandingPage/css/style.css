@@ -71,6 +71,9 @@ ul li a img{
     box-shadow: 0 0 0 1px #DFE1E5;
     overflow: hidden;
 }
+.search:hover{
+    box-shadow: 0px 1px 3px 2px #DFE1E5;
+}
 .search .icon{
     position: absolute;
     top: 0;
@@ -102,7 +105,7 @@ ul li a img{
 }
 .search .input{
     position: relative;
-    width: 80%;
+    width: 70%;
     height:40px;
     left: 50px;
     display: flex;
@@ -119,12 +122,25 @@ ul li a img{
     font-weight: 400;
     color: rgba(0, 0, 0, 0.87);
 }
-.input_img{
-    position:absolute;
-    bottom:0px;
-    right:30px;
-    width:20px;
-    height: auto;
+.side-icons{
+    position: absolute;
+    right: 16px;
+    bottom: 1px;
+    height: 100%;
+    width: 50px;
+
+    display: flex;
+    justify-content:space-between;
+    align-items: center;
+}
+.side-icons img:hover{
+    cursor: pointer;
+}
+.side-icons .key{
+    width: 18px;
+}
+.side-icons .mic{
+    width:12px;
 }
 
 
