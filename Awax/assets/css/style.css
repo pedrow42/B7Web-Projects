@@ -5,6 +5,9 @@
     font-family: 'Montserrat', sans-serif;
     text-transform: uppercase;
 }
+body{
+    overflow-x: hidden;
+}
 html {
     /* a cada 1rem será considera 10px */
     font-size: 62.5%;
@@ -68,6 +71,7 @@ main .banner .sliders{
     width: 300vw;
     height: 100%;
     background-color: rgba(0, 0, 0, .8);
+    transition: .5s ease;
 }
 main .banner .slide{
     width: 100vw;
@@ -109,3 +113,89 @@ main .banner .slide{
     font-size: 1.5rem;
     font-weight: 700;
 }
+.banner .slide-focus{
+    width: 100vw;
+    height: 20px;
+    position: absolute;
+    bottom: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.banner .pointer-1,
+.pointer-2,
+.pointer-3{
+    width: 15px;
+    height: 15px;
+    border: 2px solid #b98b59;
+    margin: 0 5px 0 5px;
+    cursor: pointer;
+    border-radius: 100%;
+}
+.banner .phone{
+    position: absolute;
+    right: 85px;
+    bottom: -20px;
+    width: 50px;
+    height: 50px;
+    border-radius: 100%;
+    background-color: #b98b59;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    box-shadow: 1px 1px 2px 1px rgba(0, 0, 0, 0.322), -1px -1px 2px 1px rgba(0, 0, 0, 0.322);
+    cursor: pointer;
+}
+.banner .phone img{
+    filter: invert(99%) sepia(99%) saturate(2%) hue-rotate(221deg) brightness(109%) contrast(100%);
+}
+.default{
+    padding-top: 64px;
+    padding-bottom: 44px;
+}
+.default.light{
+    background-color: #f7f7f7;
+}
+.default .section-title{
+    text-align: center;
+    padding-bottom: 50px;
+}
+.default .section-title h1{
+    font-size: 2.8rem;
+    color: #000;
+    font-weight: 700;
+    margin-bottom: 11px;
+}
+.default .section-title p{
+    font-size: 1.2rem;
+    color: #afafaf;
+    font-weight: 700;
+}
+.default .container .about-us{
+    display: flex;
+}
+.default .container .text{
+    padding-right: 22px;
+}
+.default .container .text p{
+    text-transform: none;
+    font-size: 1.3rem;
+    color: #000;
+    line-height: 24px;
+    font-weight: 500;
+    padding-bottom: 30px;
+}
+.about-us .img{
+    box-shadow: .5px 10px 12px 6px rgba(0, 0, 0, 0.322);
+}
+.default .container .text a{
+    text-decoration: none;
+    padding: 15px 60px;
+    color: #ffffff;
+    background-color: #b98b59;
+    border-radius: 19px;
+    font-size: 1.3rem;
+    font-weight: 700;
+}
+
+
