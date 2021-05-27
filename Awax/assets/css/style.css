@@ -162,9 +162,11 @@ main .banner .slide{
 }
 .default .section-title h1{
     font-size: 2.8rem;
-    color: #000;
     font-weight: 700;
     margin-bottom: 11px;
+}
+.default.light .section-title h1{
+    color: #000;
 }
 .default .section-title p{
     font-size: 1.2rem;
@@ -173,6 +175,7 @@ main .banner .slide{
 }
 .default .container .about-us{
     display: flex;
+    padding-bottom: 40px;
 }
 .default .container .text{
     padding-right: 22px;
@@ -197,5 +200,48 @@ main .banner .slide{
     font-size: 1.3rem;
     font-weight: 700;
 }
+.default.dark{
+    background-color: #000;
+    color: white;
+}
+.default.dark .section-title h1{
+    color: #fff;
+}
+.services{
+    display: flex;justify-content: center;
+}
+.services .box-services{
+    flex: 1;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding: 18px 28px;
+    flex-direction: column;
+
+    border-left: 2px solid #383838;
+
+    height: 210px;
+    line-height: 20px;
+}
+.services .box-services:last-child{
+    border-right: 2px solid #383838;
+}
+.services .box-services img{
+    padding-bottom: 38px;
+}
+.services .box-services h1{
+    padding-bottom: 10px;
+
+    font-size: 1.5rem;
+    color: #fff;
+    font-weight: 700;
+}
+.services .box-services p{
+    color: #686868;
+    font-size: 1rem;
+}
+
 
 
