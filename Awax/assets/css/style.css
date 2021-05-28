@@ -178,7 +178,7 @@ main .banner .slide{
     padding-bottom: 40px;
 }
 .default .container .text{
-    padding-right: 22px;
+    padding-right: 30px;
 }
 .default .container .text p{
     text-transform: none;
@@ -187,6 +187,7 @@ main .banner .slide{
     line-height: 24px;
     font-weight: 500;
     padding-bottom: 30px;
+    text-align: start;
 }
 .about-us .img{
     box-shadow: .5px 10px 12px 6px rgba(0, 0, 0, 0.322);
@@ -208,7 +209,8 @@ main .banner .slide{
     color: #fff;
 }
 .services{
-    display: flex;justify-content: center;
+    display: flex;
+    justify-content: center;
 }
 .services .box-services{
     flex: 1;
@@ -241,6 +243,56 @@ main .banner .slide{
 .services .box-services p{
     color: #686868;
     font-size: 1rem;
+}
+.our-projects{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+.our-projects .projects-list{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #ededed;
+
+    height: 58px;
+    padding: 0 25px;
+    border-radius: 19px;
+    border: 1px solid #cfcfcf;
+
+    margin-bottom: 8px;
+}
+.our-projects .projects-list ul{
+    display: flex;
+    list-style: none;
+}
+.our-projects .projects-list ul li{
+    padding: 0 6px;
+    height: 50px;
+    border-left: 1px solid #cfcfcf;
+    display: flex;
+    align-items: center;
+}
+.our-projects .projects-list ul li:first-child{
+    border-left: none;
+}
+.our-projects .projects-list ul li a{
+    display: block;
+    padding: 24px 20px;
+    font-size: 10px;
+    color: #000;
+    text-decoration: none;
+}
+.our-projects .projects-list ul li a:hover{
+    border-bottom: 5px solid #b98b59;
+    padding-bottom: 17px;
+    padding-top: 22px;
+}
+.our-projects .section-photos-gallery{
+    width: 100vw;
+    max-width: 1140px;
+    padding: 32px 0;
+    
 }
 
 
