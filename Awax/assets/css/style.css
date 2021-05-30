@@ -67,13 +67,14 @@ main .banner{
     background-size: cover;
     overflow: hidden;
 }
-main .banner .sliders{
+.banner .sliders{
     width: 300vw;
     height: 100%;
     background-color: rgba(0, 0, 0, .8);
     transition: .5s ease;
+    display: flex;
 }
-main .banner .slide{
+.banner .slide{
     width: 100vw;
     height: 100%;
     display: inline-block;
@@ -87,23 +88,24 @@ main .banner .slide{
     align-items: center;
     flex-direction: column;
 }
-.slide-1 h1{
+.banner .slide-1 h1{
     font-size: 6.2rem;
     font-weight: 700;
     color: #ffffff;
     line-height: 1;
     padding-bottom: 16px;
+    text-align: center;
 }
-.slide-1 h1 span{
+.banner .slide-1 h1 span{
     color: #b98b59;
 }
-.slide-1 h2{
+.banner .slide-1 h2{
     color: #ffffff;
     font-size: 2.2rem;
     font-weight: 700;
     padding-bottom: 40px;
 }
-.slide-1 a{
+.banner .slide-1 a{
     display: block;
     text-decoration: none;
     padding: 15px 60px;
@@ -288,11 +290,99 @@ main .banner .slide{
     padding-bottom: 17px;
     padding-top: 22px;
 }
-.our-projects .section-photos-gallery{
+.our-projects .section-projects-gallery{
     width: 100vw;
     max-width: 1140px;
-    padding: 32px 0;
+    padding: 32px 0 0 0;
+    padding-left: 20px;
+
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+.our-projects .projects-photo{
+    width: 280px;
+    height: 180px;
+}
+.our-projects .projects-photo .projects-photoarea{
+    width: 250px;
+    height: 150px;
+}
+.our-projects .projects-photo .projects-photoarea img{
+    width: inherit;
+    height: inherit;
+}
+.projects-photoinfo{
+    position: absolute;
+    background-color: rgba(0, 0, 0);
+    width: inherit;
+    height: inherit;
     
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+
+    color: #fff;
+    padding: 40px;
+
+    opacity: 0;
+    transition: 1s ease;
+}
+.projects-photoinfo h5{
+    font-size: 1.8rem;
+    font-weight: 400;
+    padding-bottom: 12px;
+}
+.projects-photoinfo p{
+    line-height: 20px;
+}
+.projects-photoarea:hover .projects-photoinfo{
+    cursor: pointer;
+    opacity: .8;
+}
+.our-projects .button{
+    text-decoration: none;
+    padding: 18px 45px;
+    color: #fff;
+    background-color: #b98b59;
+    border-radius: 19px;
+    font-size: 12px;
+    font-weight: 600;
+}
+.default.dark.our-team{
+    background-image: url(/assets/images/bg.jpg);
+    background-size: cover;
+    background-position: center;
+    padding: 0;
+}
+.our-team-area{
+    background-color: rgba(0, 0, 0, .8);
+    padding-top: 64px;
+    padding-bottom: 44px;
+}
+.default.dark.our-team .sliders{
+    overflow: hidden;
+    color: black;
+    width: 300vw;
+    display: flex;
+}
+.sliders .slide{
+    width: 100vw;
+}
+.sliders .slide .our-team-slides{
+    max-width: 114rem;
+    margin: auto;
+    width: 100%;
+
+    display: flex;
+}
+.our-team-cards{
+    width: 350px;
+    height: 400px;
+    background-color: #fff;
+    margin-right: 30px;
 }
 
 
