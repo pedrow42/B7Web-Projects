@@ -71,7 +71,7 @@ main .banner{
     width: 300vw;
     height: 100%;
     background-color: rgba(0, 0, 0, .8);
-    transition: .5s ease;
+    transition: 1s ease;
     display: flex;
 }
 .banner .slide{
@@ -124,9 +124,7 @@ main .banner{
     justify-content: center;
     align-items: center;
 }
-.banner .pointer-1,
-.pointer-2,
-.pointer-3{
+.banner .pointer{
     width: 15px;
     height: 15px;
     border: 2px solid #b98b59;
@@ -367,8 +365,9 @@ main .banner{
     color: black;
     width: 300vw;
     display: flex;
+    transition: 1s ease;
 }
-.sliders .slide{
+.our-team-area .sliders .slide{
     width: 100vw;
 }
 .sliders .slide .our-team-slides{
@@ -380,10 +379,83 @@ main .banner{
 }
 .our-team-cards{
     width: 350px;
-    height: 400px;
     background-color: #fff;
     margin-right: 30px;
-}
 
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+
+    border-radius: 5px;
+}
+.our-team-cards .cards-image{
+    padding: 50px 0 45px 0;
+}
+.our-team-cards .cards-text{
+    text-align: center;
+    padding-bottom: 40px;
+}
+.our-team-cards .cards-text h2{
+    font-size: 1.8rem;
+    font-weight: 600;
+    padding-bottom: 14px;
+    color: #242424;
+}
+.our-team-cards .cards-text p{
+    text-transform: none;
+    font-size: 12px;
+    color: #636363;
+}
+.our-team-cards .social-links{
+    display: flex;
+    padding-bottom: 44px;
+}
+.our-team-cards .social-links img{
+    width: 20px;
+    filter: invert(84%) sepia(100%) saturate(20%) hue-rotate(228deg) brightness(110%) contrast(104%);
+}
+.our-team-cards .social-links a{
+    margin-right: 6px;
+    padding: 8px;
+    background-color: #bebebe;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+}
+.our-team-cards .social-links a:hover{
+    background-color: #b98b59;
+}
+.our-team-area .slide-focus{
+    width: 100vw;
+    height: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 50px;
+}
+.our-team-area .slide-focus .pointer{
+    width: 15px;
+    height: 15px;
+    border: 2px solid #b98b59;
+    margin: 0 5px 0 5px;
+    cursor: pointer;
+    border-radius: 100%;
+}
+.happy-clientes-area .sliders{
+    overflow: hidden;
+    color: black;
+    width: 300vw;
+    display: flex;
+    transition: 1s ease;
+}
+.happy-clientes-area .sliders .slide{
+    width: 100vw;
+}
+.happy-clients-slides{
+    max-width: 114rem;
+    margin: auto;
+    width: 100%;
+}
 
 
