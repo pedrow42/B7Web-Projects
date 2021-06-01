@@ -442,6 +442,9 @@ main .banner{
     cursor: pointer;
     border-radius: 100%;
 }
+.happy-clientes-area{
+    padding-top: 64px;
+}
 .happy-clientes-area .sliders{
     overflow: hidden;
     color: black;
@@ -453,9 +456,76 @@ main .banner{
     width: 100vw;
 }
 .happy-clients-slides{
-    max-width: 114rem;
+    max-width: 730px;
     margin: auto;
     width: 100%;
-}
 
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    text-align: center;
+
+}
+.happy-clients-slides .client-photo{
+    padding-bottom: 24px;
+}
+.happy-clients-slides .client-name{
+    padding-bottom: 30px;
+}
+.happy-clients-slides .client-name h1{
+    color: #000;
+    padding-bottom: 12px;
+    font-size: 1.8rem;
+    text-transform: none;
+}
+.happy-clients-slides .client-name h2{
+    color: #000;
+    font-size: 1.4rem;
+    text-transform: none;
+}
+.happy-clients-slides .client-quote img{
+    padding-bottom: 18px;
+}
+.happy-clients-slides .client-quote p{
+    line-height: 14px;
+    text-transform: none;
+    font-size: 1.2rem;
+    color: #7e7e7e;
+}
+.happy-clientes-area .slide-focus{
+    width: 100vw;
+    height: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 50px;
+}
+.happy-clientes-area .slide-focus .pointer{
+    width: 15px;
+    height: 15px;
+    border: 2px solid #b98b59;
+    margin: 0 5px 0 5px;
+    cursor: pointer;
+    border-radius: 100%;
+}
+.default.light.sponsors{
+    background-color: #fff;
+    border: 1px solid #cfcfcf;
+    border-bottom: 2px solid #cfcfcf;
+}
+.default.light.sponsors .container{
+    display: flex;
+    justify-content: space-around;
+}
+.default.light.prices .container{
+    display: flex;
+    justify-content: space-between;
+}
+.price-cards{
+    background-color: #fff;
+    border-radius: 5px;
+    text-align: center;
+    width: 256px;
+    padding: 30px 0;
+}
 
