@@ -885,24 +885,22 @@ footer{
 .footer-subscribe .subscribe-button input:hover{
     cursor: pointer;
 }
-.street-view .phone{
-    position: absolute;
+.up-arrow{
+    position: relative;
+    top: 13px;
     width: calc((100vw - 1140px)/2);
+    height: 40px;
     display: flex;
-    justify-content: center;
     align-items: center;
+    justify-content: center;
 }
-.street-view .phone .phone-icon{
-    border-radius: 100%;
-    width: 50px;
-    height: 50px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
+.up-arrow a{
+    padding: 10px;
     background-color: #b98b59;
-    box-shadow: 1px 1px 2px 1px rgba(0, 0, 0, 0.322), -1px -1px 2px 1px rgba(0, 0, 0, 0.322);
-    cursor: pointer;
+    border-radius: 50%;
+    transform: rotate(-90deg);
 }
-.street-view .phone img{
-    filter: invert(99%) sepia(99%) saturate(2%) hue-rotate(221deg) brightness(109%) contrast(100%);
+.up-arrow img{
+    width: 30px;
+    filter: invert(84%) sepia(100%) saturate(20%) hue-rotate(228deg) brightness(110%) contrast(104%);
 }
