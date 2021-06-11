@@ -14,6 +14,7 @@ html {
   }
 .container{
     max-width: 114rem;
+    width: 90%;
     margin: auto;
 }
 header{
@@ -21,9 +22,7 @@ header{
     background-color: #000;
 }
 header .container{
-    max-width: 114rem;
     height: 10rem;
-    margin: auto;
 
     display: flex;
     justify-content: space-between;
@@ -191,6 +190,11 @@ main .banner{
 }
 .about-us .img{
     box-shadow: .5px 10px 12px 6px rgba(0, 0, 0, 0.322);
+    height: 276px;
+    width: 446px;
+}
+.about-us .img img{
+    height: 100%;
 }
 .default .container .text a{
     text-decoration: none;
@@ -231,11 +235,9 @@ main .banner{
     border-right: 2px solid #383838;
 }
 .services .box-services img{
-    padding-bottom: 38px;
+    height: 60px;
 }
 .services .box-services h1{
-    padding-bottom: 10px;
-
     font-size: 1.5rem;
     color: #fff;
     font-weight: 700;
@@ -279,7 +281,7 @@ main .banner{
 .our-projects .projects-list ul li a{
     display: block;
     padding: 24px 20px;
-    font-size: 10px;
+    font-size: 1rem;
     color: #000;
     text-decoration: none;
 }
@@ -289,9 +291,9 @@ main .banner{
     padding-top: 22px;
 }
 .our-projects .section-projects-gallery{
-    width: 100vw;
-    max-width: 1140px;
-    padding: 32px 0 0 0;
+    /*width: 100%;
+    max-width: 1140px;*/
+    padding-top: 32px;
     padding-left: 20px;
 
     display: flex;
@@ -346,7 +348,7 @@ main .banner{
     color: #fff;
     background-color: #b98b59;
     border-radius: 19px;
-    font-size: 12px;
+    font-size: 1.2rem;
     font-weight: 600;
 }
 .default.dark.our-team{
@@ -373,7 +375,7 @@ main .banner{
 .sliders .slide .our-team-slides{
     max-width: 114rem;
     margin: auto;
-    width: 100%;
+    width: 90%;
 
     display: flex;
 }
@@ -403,7 +405,7 @@ main .banner{
 }
 .our-team-cards .cards-text p{
     text-transform: none;
-    font-size: 12px;
+    font-size: 1.2rem;
     color: #636363;
 }
 .our-team-cards .social-links{
@@ -458,7 +460,7 @@ main .banner{
 .happy-clients-slides{
     max-width: 730px;
     margin: auto;
-    width: 100%;
+    width: 90%;
 
     display: flex;
     justify-content: center;
@@ -580,7 +582,7 @@ main .banner{
     width: 100vw;
 }
 .premium-area-slide{
-    width: 100%;
+    width: 90%;
     max-width: 1140px;
     margin: auto;
 
@@ -682,7 +684,7 @@ main .banner{
 }
 .social-bar .social-links{
     max-width: 645px;
-    width: 100%;
+    width: 90%;
     margin: auto;
     padding: 24px 0;
 
@@ -729,7 +731,7 @@ main .banner{
     font-weight: 600;
 }
 .contact-form{
-    width: 100%;
+    width: 90%;
     max-width: 542px;
     margin: auto;
 }
@@ -849,11 +851,13 @@ footer{
 .footer-description,
 .footer-subscribe{
     margin-left: 35px;
+    overflow: auto;
 }
 .footer-description p{
     color: #7e7e7e;
     line-height: 14px;
     text-align: start;
+    font-size: 1rem;
 }
 .footer-subscribe{
     background-color: #373737;
@@ -903,4 +907,27 @@ footer{
 .up-arrow img{
     width: 30px;
     filter: invert(84%) sepia(100%) saturate(20%) hue-rotate(228deg) brightness(110%) contrast(104%);
+}
+@media(max-width:1170px){
+    .menu{
+        display: none;
+    }
+}
+@media(max-width:972px){
+    .about-us{
+        flex-direction: column;
+        align-items: center;
+    }
+    .default .container .img{
+        margin-top: 30px;
+    }
+    .default .container .img img{
+        width: 100%;
+    }
+    .default .container .text{
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+        padding-right: 0;
+    }
 }
