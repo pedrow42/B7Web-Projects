@@ -930,4 +930,17 @@ footer{
         flex-direction: column;
         padding-right: 0;
     }
+    .default .container .about-us{
+        padding-bottom: 0;
+    }
+    .services{
+        flex-wrap: wrap;
+    }
+    .services .box-services{
+        border: none;
+        min-width: 300px;
+    }
+    .services .box-services:last-child{
+        border: none;
+    }
 }
